@@ -101,7 +101,7 @@ if(HALTED == 0)
 begin
 
     //There would be a feedback from the EX stage that would tell the IF stage whether or not the previous instruction is a branch instruction along with the information about its condition whether it is satisfied or not.
-    if(((EX_MEM_IR[31:26]==BEQZ) && (EX_MEM_cond == 1)) || ((EX_MEM_IR[31:26] == BNEQZ) && (EX_MEM_cond == 0)))
+  if(((EX_MEM_IR[31:26]==BEQZ) && (EX_MEM_cond == 0)) || ((EX_MEM_IR[31:26] == BNEQZ) && (EX_MEM_cond == 1)))
     
     begin
     
